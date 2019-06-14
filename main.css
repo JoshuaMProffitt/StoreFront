@@ -1,0 +1,104 @@
+/* Grid Setup */
+body {
+  /* https://codepen.io/geoffgraham/pen/dZMYEO?editors=1100 */
+  /* helped understand how grid worked */
+  display: grid;
+  grid-template-columns: 75% 25%;
+  /* height of header/main and side/footer */
+  grid-template-rows: 8vw 95% 10vw;
+  grid-gap: .1em;
+  margin: 0 auto;
+  /* width of page */
+  max-width: 99%;
+  padding: 1em 0;
+  background: black;
+}
+/* Header */
+header{
+  grid-column: 1 / span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* https://pixabay.com/vectors/triangles-polygon-color-pink-1430105/ */
+  /* background image */
+  background: url(Assets/Header_One.png) center;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+header h2 {
+  font-weight: 300;
+  font-size: 3.8em;
+  color:black;
+  margin: -0.4em 0 0 1.0em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+/* main section and stuff in it */
+
+/* panel for fish */
+section div.panel{
+  float: left;
+  position: top;
+  /* margin between title and items - margin between items - margin between 2nd row of items - margin between all items*/
+  margin: 0.5em 0.5em 2.0em 4.0em;
+  padding: 1.0em;
+  background-color: rgba(29, 196, 168, 0.795);
+  border: black solid 1px;
+  border-radius: 0.5em;
+}
+main{
+  background-image: url(Assets/air_bubbles_background.jpeg);
+  display: flex;
+  /* moves items to top */
+  align-items: top;
+  justify-content: center;
+}
+button {
+  color:black;
+  background-color: rgba(29, 196, 168, 0.795);
+  display: inline-block;
+  margin: 0 0.75em 0 0;
+  padding: 0.2em 0.5em;
+  border: 1px solid red;
+  text-transform: uppercase;
+}
+button:hover {
+  background-color: rgba(60, 95, 89, 0.795);
+  border: 1px solid red;
+}
+section .title4store .title{
+  /* margin from top / center in the middle of page */
+  margin: 30px auto ;
+  width: 25%;
+  text-align: center;
+  background-color: rgba(29, 196, 168, 0.795);
+  border: 1px solid black;
+}
+section .panel .fishType {
+  height: 180px;
+  width: 250px;
+ }
+/* Sidebar and stuff */
+H3{
+  text-align: center;
+  font-size: 1.35em;
+  background-color: rgba(163, 93, 27, 0.795);
+  border: 1px solid black;
+}
+aside{
+  padding: 10px;
+  position: relative;
+  display: block;
+  background: url(Assets/Waterside.jpeg);
+  display: inline-block;
+}
+/* Footer */
+footer {
+  grid-column: 1 / span 2;
+  height: 30%;
+  font-size: .5em;
+  background: darkslategray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
